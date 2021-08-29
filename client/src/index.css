@@ -1,0 +1,19 @@
+
+@font-face {
+    font-family: 'Poppins-Regular';
+    src: url('./assets/fonts/Poppins/Poppins-Regular.ttf');
+    font-style: normal;
+}
+body {
+  margin: 0;
+  font-family: 'Poppins-Regular'; 
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+}
+a{
+  text-decoration: none;
+}
+code {
+font-family: 'Poppins-Regular'; 
+}
