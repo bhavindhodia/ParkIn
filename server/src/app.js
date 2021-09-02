@@ -9,6 +9,9 @@ const compression = require('compression');
 const routes = require('./routes/v1');
 const { errorConverter, errorHandler } = require('./middlewares/error');
 const ApiError = require('./utils/ApiError')
+const passport = require('passport');
+const { jwtStrategy } = require('./config/passport');
+
 
 const app = express();
 
@@ -32,9 +35,10 @@ app.use(compression());
 app.use(cors());
 app.options('*', cors());
 
-// jwt authentication
-//app.use(passport.initialize());
-//passport.use('jwt', jwtStrategy);
+// for jwt authentication
+app.use(passport.initialize());
+passport.use('jwt', jwtStrategy);
+ 
 
 // v1 api routes
 app.use('/v1', routes);

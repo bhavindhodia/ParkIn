@@ -62,6 +62,10 @@ const verifyEmail = async (verifyEmailToken) => {
     }
 };
 
+const isAdmin = async(user) =>{
+    
+}
+
 module.exports = {
     loginUserWithEmailAndPassword,
     logout,
