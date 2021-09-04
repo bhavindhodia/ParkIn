@@ -4,12 +4,15 @@
     src: url('./assets/fonts/Poppins/Poppins-Regular.ttf');
     font-style: normal;
 }
+*{
+ /*  border:1px solid blueviolet; */
+}
 body {
   margin: 0;
   font-family: 'Poppins-Regular'; 
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-
+    
 }
 a{
   text-decoration: none;
